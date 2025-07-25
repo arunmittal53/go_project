@@ -3,8 +3,8 @@ package database
 import (
 	"context"
 	"errors"
-	"first_project/internal/models"
 	"fmt"
+	"go_project/internal/models"
 	"os"
 
 	"github.com/jackc/pgx/v5/pgconn"
@@ -18,7 +18,7 @@ type PostgresClient struct {
 
 func NewPostgresClient() (*PostgresClient, error) {
 	dsn := fmt.Sprintf(
-		"host=%s user=%s password=%s dbname=%s port=%s sslmode=disable TimeZone=Asia/Kolkata",
+		"host=%s user=%s password=%s dbname=%s port=%s sslmode=disable",
 		os.Getenv("DB_HOST"),
 		os.Getenv("DB_USER"),
 		os.Getenv("DB_PASSWORD"),

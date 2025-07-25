@@ -1,9 +1,9 @@
 package routes
 
 import (
-	"first_project/handlers"
-	"first_project/internal/database"
-	"first_project/internal/redis"
+	"go_project/handlers"
+	"go_project/internal/database"
+	"go_project/internal/redis"
 
 	"github.com/gin-gonic/gin"
 )
